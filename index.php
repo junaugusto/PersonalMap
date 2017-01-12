@@ -28,53 +28,47 @@
             </div>
         </div>
         <div class="row">
-            <div id="map" class="col-md-6">
+            <div class="col-md-6">
+                <div id="map" class="col-md-12">
                 
+            </div>
             </div>
             <div class="col-md-6 ">                
                 <div class="col-md-6 col-md-offset-2">
-                <!-- 
-                1 - Criar um crud em php para localidades com nome, estado, cidade, latitude e longitude e imagem para o pin no mapa.
-                2 - Depois criar um mapa do google maps em página em separado e retornar com os pins cadastrados no crud.
-                3 - O marcador exibido deve ser o escolhido ou um definido como padrão, caso não tenha sido escolhido um. 
-                4 - Ao clicar no pin, deve mostrar os dados do local colocado no crud dentro do balão no mapa.
-
-                O prazo para devolução é dia 12/01, até o meio-dia
-                 -->
-                    <form>
-                      <div class="form-group">
+                
+                 <form >
+                      <div class="form-group" >
                         <label for="exampleInputEmail1">Nome:</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Escreva seu nome...">
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Escreva seu nome...">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Estado:</label>
-                        <input type="text" class="form-control" id="estado" placeholder="Escreva seu estado...">
+                        <input type="text" class="form-control" id="estado" name="estado" placeholder="Escreva seu estado...">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Cidade:</label>
-                        <input type="text" class="form-control" id="cidade" placeholder="Escreva sua cidade...">
+                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Escreva sua cidade...">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Latitude:</label>
-                        <input type="text" class="form-control" id="latitude" placeholder="Escreva sua latitude...">
+                        <input type="text" class="form-control" id="latitude" name="latitude" placeholder="Escreva sua latitude...">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Longitude:</label>
-                        <input type="text" class="form-control" id="longitude" placeholder="Escreva sua longitude...">
+                        <input type="text" class="form-control" id="longitude" name="longitude" placeholder="Escreva sua longitude...">
                       </div>                      
                       <div class="form-group">
                         <label for="exampleInputFile">Envie uma Imagem</label>
-                        <input type="file" id="InputFile">
+                        <input type="file" id="InputFile" name="InputFile">
                       </div>                      
-                      <button type="submit" class="btn btn-default">Enviar</button>
+                      <button type="button"  onclick="pan()" class="btn btn-default">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <script <script src="js/mapa.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCuzuj1UynAM-jb8WV27BGseFblFCjXKpA&callback=initMap"async defer></script>
+     <script src="js/mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=  AIzaSyAsYlQLHxVpgUnMMgRK3pLHOvVmfa_0jO4&callback=initMap"async defer></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
